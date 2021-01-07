@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/displaytxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#68686D"
+        android:ems="10"
+        android:gravity="right"
+        android:hint="@string/_0"
+        android:inputType="textPersonName"
+        android:paddingTop="40pt"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="36sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buclear"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_weight="1"
+                android:background="#D6D6D6"
+                android:onClick="allclear"
+                android:text="AC"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:backgroundTint="#D6D6D6"
+                app:iconTint="@color/white" />
+
+            <Button
+                android:id="@+id/buplusminus"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_weight="1"
+                android:background="#D6D6D6"
+                android:onClick="numberclick"
+                android:text="+/-"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:backgroundTint="#D6D6D6" />
+
+            <Button
+                android:id="@+id/bupercent"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_weight="1"
+                android:background="#D6D6D6"
+                android:onClick="percentage"
+                android:text="%"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:backgroundTint="#D6D6D6" />
+
+            <Button
+                android:id="@+id/budiv"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_weight="1"
+                android:background="#F79231"
+                android:onClick="opselect"
+                android:text="/"
+                android:textSize="30sp"
+                app:backgroundTint="#F79231" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bu7"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_weight="1"
+                android:background="#D6D6D6"
+                android:onClick="numberclick"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:backgroundTint="#D6D6D6" />
+
+            <Button
+                android:id="@+id/bu8"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_weight="1"
+                android:background="#D6D6D6"
+                android:onClick="numberclick"
+                android:text="8"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:backgroundTint="#D6D6D6" />
+
+            <Button
+                android:id="@+id/bu9"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_weight="1"
+                android:background="#D6D6D6"
+                android:onClick="numberclick"
+                android:text="9"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:backgroundTint="#D6D6D6" />
+
+            <Button
+                android:id="@+id/bumul"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_weight="1"
+                android:background="#F79231"
+                android:onClick="opselect"
+                android:text="X"
+                android:textSize="30sp"
+                app:backgroundTint="#F79231" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bu4"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_weight="1"
+                android:background="#D6D6D6"
+                android:onClick="numberclick"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:backgroundTint="#D6D6D6" />
+
+            <Button
+                android:id="@+id/bu5"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_weight="1"
+                android:background="#D6D6D6"
+                android:onClick="numberclick"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:backgroundTint="#D6D6D6" />
+
+            <Button
+                android:id="@+id/bu6"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_weight="1"
+                android:background="#D6D6D6"
+                android:onClick="numberclick"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:backgroundTint="#D6D6D6" />
+
+            <Button
+                android:id="@+id/busub"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_weight="1"
+                android:background="#F79231"
+                android:onClick="opselect"
+                android:text="-"
+                android:textSize="30sp"
+                app:backgroundTint="#F79231" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bu3"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_weight="1"
+                android:background="#D6D6D6"
+                android:onClick="numberclick"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:backgroundTint="#D6D6D6" />
+
+            <Button
+                android:id="@+id/bu2"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_weight="1"
+                android:background="#D6D6D6"
+                android:onClick="numberclick"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:backgroundTint="#D6D6D6" />
+
+            <Button
+                android:id="@+id/bu1"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_weight="1"
+                android:background="#D6D6D6"
+                android:onClick="numberclick"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:backgroundTint="#D6D6D6" />
+
+            <Button
+                android:id="@+id/buadd"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_weight="1"
+                android:background="#F79231"
+                android:onClick="opselect"
+                android:text="+"
+                android:textSize="30sp"
+                app:backgroundTint="#F79231" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bu0"
+            android:layout_width="90pt"
+            android:layout_height="45pt"
+            android:layout_weight="2"
+            android:background="#D6D6D6"
+            android:onClick="numberclick"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:backgroundTint="#D6D6D6"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/budot"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_weight="1"
+            android:background="#D6D6D6"
+            android:onClick="numberclick"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:backgroundTint="#D6D6D6" />
+
+        <Button
+            android:id="@+id/buequal"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_weight="1"
+            android:background="#F79231"
+            android:onClick="equalop"
+            android:text="="
+            android:textSize="30sp"
+            app:backgroundTint="#F79231" />
+
+    </LinearLayout>
+</LinearLayout>
